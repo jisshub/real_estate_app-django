@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,12 +17,22 @@
     <title>BT Real Estate</title>
 </head>
 <body>
+    <!-- topbar -->
+    {% include 'partial/_topbar.html' %}
+
+    <!-- navbar -->
+    {% include 'partial/_navbar.html' %}
 
     {% block content %}
     {% endblock %}
 
-  <script src="assets/js/jquery-3.3.1.min.js "></script>
-  <script src="assets/js/bootstrap.bundle.min.js "></script>
-  <script src="assets/js/main.js "></script>
+    <!-- footer -->
+    {% include 'partial/_footer.html' %}
+
+   <!-- here these template tags will be looking inside the static folder and then load the js files -->
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/lightbox.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
