@@ -30,7 +30,10 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="index.html">
+            <!-- adding url to index using template tag -->
+            <!-- it will point to index path in pages/urls.py -->
+            <!-- v give the value of name attribute -->
+            <a href="{% url 'index' %}">
               <i class="fas fa-home"></i> Home</a>
           </li>
           <li class="breadcrumb-item active"> About</li>
