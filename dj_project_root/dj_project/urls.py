@@ -18,5 +18,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # link urls of the pages app
     path('', include('pages.urls')),
+    # link urls of the listings app, so if v navigate to listings/ it goes to listings.urls module
+    path('listings/', include('listings.urls'))
 ]
