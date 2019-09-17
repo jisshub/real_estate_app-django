@@ -1,0 +1,56 @@
+models 
+-----------
+
+1. Listing model
+#field:
+
+id: int (an id created by default for every model)
+realtor: int- (foreign key[REALTOR model]), here listings and realtors 		r associated. Each realtor r connected with a listing.
+
+title: str
+address: str
+city: str
+state: str
+zip_code: str
+description: text(longer than str)
+price: int
+bedrooms: int
+bathrooms: int
+garage: int
+square_ft: int
+lot_size: float (1.4 acres)
+is_published: bool (default as true)
+list_date: str
+photo_main: str (here include the location of image as str)
+photo_1: str
+---
+---
+photo_6: str
+
+
+
+2. Realtor model
+#fields
+id: int
+name: str
+photo: str
+decsription: str
+email: str
+phone: str
+is_mvp(means whether seller of month): bool (default as 0)
+hire_date: Date
+
+3. Contact model
+#fields
+
+id: int
+user_id: int (knows which user is contacted)
+listing: int (which connects to title of listing)
+listing_id :int
+name: str (name of user contacted)
+email: str
+phone: str
+contact_date: Date
+ 
+
+
