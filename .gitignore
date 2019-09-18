@@ -1,8 +1,5 @@
+scehmas.txt
+*.pyc
 /.idea
 /venv
-/dj_project_root/db.sqlite3
-*.pyc
-*.log
-__pycache__/
-
-
+dj_project_root/db.sqlite3

@@ -28,3 +28,29 @@ creating a django app
 python manage.py startapp events
 
 
+add models to the db
+----------------------
+python manage.py makemigrations
+
+ -- create a 0001_initial file in migrtions. still not added to db, to migrate all models to db
+later run,
+
+python manage.py migrate
+
+
+to get the sql of model listings
+------------------------
+python manage.py sqlmigrate lisintgs 0001
+
+create superuser
+-----------------------
+python manage.py createsuperuser
+
+registering models with admin
+-------------------------------------
+from .models import ModelName
+admin.site.register(ModelName)
+
+
+
+
