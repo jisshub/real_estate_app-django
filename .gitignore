@@ -3,3 +3,5 @@ scehmas.txt
 /.idea
 /venv
 dj_project_root/db.sqlite3
+/media/
+media/

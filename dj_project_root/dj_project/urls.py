@@ -25,3 +25,6 @@ urlpatterns = [
                   # link urls of the listings app, so if v navigate to listings/ it goes to listings.urls module
                   path('listings/', include('listings.urls'))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# change the admin site header
+# admin.site.site_header = 'BT Real Estate '
