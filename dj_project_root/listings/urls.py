@@ -9,6 +9,6 @@ urlpatterns = [
     path('<int: listing_id>', views.listing, name='listing'),
     # here int is the type of parameter. <int: listing_id> is the way to access the id from the view
     # method.
-    path('search', views.search, name='search'),
+    path('search/', views.search, name='search'),
 
 ]
